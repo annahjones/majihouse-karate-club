@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Maji House Karate Club | Photos</title>
+  <meta name="description" content="Gallery for Maji House Karate Club." />
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+</head>
+
+<body>
+  <div class="topbar">
+    <div class="container topbar-inner">
+      <span class="pill">🇰🇪 Gallery • Moments • Team</span>
+      <div class="topbar-right">
+        <a href="contact.html" class="toplink">Send Photos</a>
+      </div>
+    </div>
+  </div>
+
+  <header class="header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <span class="brand-mark"></span>
+        <span class="brand-text">
+          <strong>Maji House</strong>
+          <small>Karate Club</small>
+        </span>
+      </a>
+
+      <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">☰</button>
+
+      <nav class="nav" id="nav">
+        <a href="index.html">Home</a>
+        <a href="activities.html">Activities</a>
+        <a class="active" href="photos.html">Photos</a>
+        <a class="nav-cta" href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <h1>Photos</h1>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="gallery">
+          <div class="gallery-item"><img src="images/TEAM KATA.jpg" alt="Team Kata Photo" onclick="openImage(this)"></div>
+          <div class="gallery-item"><img src="images/MALE TEAM KATA.jpeg" alt="Male Team Kata Photo" onclick="openImage(this)"></div>
+          <div class="gallery-item"><img src="images/photo 3.JPG" alt="Photo 3" onclick="openImage(this)"></div>
+          <div class="gallery-item"><img src="images/photo 4.JPG" alt="Photo 4" onclick="openImage(this)"></div>
+          <div class="gallery-item"><img src="images/photo 5.JPG" alt="Photo 5" onclick="openImage(this)"></div>
+          <div class="gallery-item"><img src="images/photo 6.JPG" alt="Photo 6" onclick="openImage(this)"></div>
+          <div class="gallery-item"><img src="images/photo 7.JPG" alt="Photo 7" onclick="openImage(this)"></div>
+          <div class="gallery-item"><img src="images/photo 8.JPG" alt="Photo 8" onclick="openImage(this)"></div>
+          <div class="gallery-item"><img src="images/photo 9.JPG" alt="Photo 9" onclick="openImage(this)"></div>
+        </div>
+
+  
+        </div>
+      </div>
+    </section>
+  </main>
+
+<div id="imageViewer" class="image-viewer" onclick="closeImage()">
+  <img id="fullImage">
+</div>
+
+  <footer class="footer">
+    <div class="container footer-bottom">
+      <small>© <span id="year"></span> Maji House Karate Club.</small>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Maji House Karate Club | Contact</title>
+  <meta name="description" content="Contact Maji House Karate Club to join, train, or partner with us." />
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+</head>
+
+<body>
+  <div class="topbar">
+    <div class="container topbar-inner">
+      <span class="pill">🇰🇪 Contact • Join • Partner</span>
+    </div>
+  </div>
+
+  <header class="header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <span class="brand-mark"></span>
+        <span class="brand-text">
+          <strong>Maji House</strong>
+          <small>Karate Club</small>
+        </span>
+      </a>
+
+      <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">☰</button>
+
+      <nav class="nav" id="nav">
+        <a href="index.html">Home</a>
+        <a href="activities.html">Activities</a>
+        <a href="photos.html">Photos</a>
+        <a class="active nav-cta" href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <h1>Contact Us</h1>
+        <p class="muted">Send a message. </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container grid-2">
+        <div class="card">
+          <h3>Club Contacts</h3>
+          <p><b>Phone:</b> +254 758 981 989</p>
+          <p><b>Email:</b> majihousekarate@email.com</p>
+          <p><b>Location:</b> Ministry of Water and Sanitation</p>
+
+          <hr class="hr" />
+
+          <h4>Training Enquiries</h4>
+          <p class="muted">Fees, schedule, uniforms, requirements, age categories.</p>
+        </div>
+
+        <form class="card form" id="contactForm">
+          <label>
+            Full Name
+            <input type="text" name="name" placeholder="Your name" required />
+          </label>
+
+          <label>
+            Phone Number
+            <input type="tel" name="phone" placeholder="+254..." required />
+          </label>
+
+          <label>
+            Message
+            <textarea name="message" rows="6" placeholder="Tell us what you need..." required></textarea>
+          </label>
+
+          <button class="btn" type="submit">Send Message</button>
+          <p class="muted" id="formMsg" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-bottom">
+      <small>© <span id="year"></span> Maji House Karate Club.</small>
+    </div>
+  </footer>
+</body>
+</html>
